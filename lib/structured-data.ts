@@ -64,10 +64,11 @@ export function generatePersonStructuredData() {
       'https://twitter.com/dionismarkov',
       'https://linkedin.com/in/dionismarkov',
     ],
-    jobTitle: 'Software Engineer',
+    jobTitle: 'Founder & Full-Stack Engineer',
     worksFor: {
       '@type': 'Organization',
-      name: 'Dionis Markov',
+      name: 'ValtheraLabs',
+      url: 'https://github.com/ValtheraLabs',
     },
   }
 }

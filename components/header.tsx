@@ -11,7 +11,6 @@ import Link from "next/link"
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
-  // { label: "Notes", href: "/notes" },/
   { label: "Workbench", href: "/workbench" },
   { label: "Blog", href: "/blog" },
 ]
@@ -52,12 +51,12 @@ export function Header() {
         <nav className="flex items-center justify-between">
           <Link href="/" className="group flex items-center gap-3">
             <div className="relative flex h-9 w-9 items-center justify-center rounded-lg border border-primary/50 bg-primary/10 font-mono text-sm text-primary transition-all duration-400 group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-primary/25">
-              <span className="glitch">{"⚡"}</span>
+              <span className="glitch">{"DM"}</span>
             </div>
             <span className="font-mono text-sm tracking-tight">
-              EIN
+              dionis
               <span className="bg-gradient-to-l from-primary/50 to-accent bg-clip-text text-transparent font-semibold">
-                CODE
+                markov
               </span>
             </span>
           </Link>

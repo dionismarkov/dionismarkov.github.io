@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
-const roles = ["building interfaces", "exploring systems", "breaking barriers", "forging ideas", "crafting code"]
+const roles = ["building AI systems", "engineering cloud infra", "crafting developer tools", "architecting Web3", "shipping open source"]
 
 export function HeroSection() {
   const [currentRole, setCurrentRole] = useState(0)
@@ -42,10 +42,10 @@ export function HeroSection() {
           <div className="space-y-8 sm:space-y-10">
             <div className="space-y-3 animate-fade-in-up">
               <p className="font-mono text-xs uppercase tracking-[0.25em] sm:tracking-[0.35em] text-primary">
-                EinCode — Where Code Meets Curiosity
+                Dionis Markov — Founder @ ValtheraLabs
               </p>
               <h1 className="text-4xl font-bold tracking-tight sm:text-4xl lg:text-5xl xl:text-6xl text-balance">
-                Forging digital
+                Full-stack engineer
                 <br />
                 <span
                   className="bg-gradient-to-l from-primary/50 to-accent text-transparent bg-clip-text typing-cursor"
@@ -56,9 +56,9 @@ export function HeroSection() {
             </div>
 
             <p className="max-w-lg text-base sm:text-lg leading-relaxed text-muted-foreground animate-fade-in-up stagger-2">
-              Welcome to my digital workshop — a space for experiments, prototypes, and open-source artifacts. Currently
-              building at <span className="text-foreground font-medium">...</span>. Here, ideas are forged,
-              tested, and refined. Not a portfolio. A laboratory.
+              Full-stack software engineer focused on AI, cloud infrastructure, and developer tooling. Currently
+              building at <a href="https://github.com/ValtheraLabs" target="_blank" rel="noopener noreferrer" className="text-foreground font-medium underline-animate hover:text-primary transition-colors">ValtheraLabs</a> — an ecosystem of AI-powered
+              applications, SaaS platforms, and open-source projects.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up stagger-3">
@@ -66,7 +66,7 @@ export function HeroSection() {
                 href="#projects"
                 className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-lg border border-primary bg-primary/10 px-7 py-4 sm:py-3.5 font-mono text-sm text-primary transition-all duration-500 hover:bg-primary hover:text-primary-foreground active:scale-[0.98]"
               >
-                <span className="relative z-10">explore artifacts</span>
+                <span className="relative z-10">explore projects</span>
                 <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-1">→</span>
                 {/* Animated background */}
                 <span className="absolute inset-0 -translate-x-full bg-primary transition-transform duration-500 group-hover:translate-x-0" />
@@ -93,34 +93,31 @@ export function HeroSection() {
                 <div className="h-3 w-3 rounded-full bg-primary/60 transition-colors hover:bg-primary" />
               </div>
               <div className="absolute top-3.5 left-1/2 -translate-x-1/2 bg-background/50 rounded-md px-3 py-1 font-mono text-xs text-muted-foreground">
-                terminal://eincode
+                terminal://dionismarkov
               </div>
 
               <pre className="mt-6 overflow-hidden font-mono text-[10px] leading-relaxed text-primary/80 sm:text-xs md:text-sm">
                 <span className="sm:hidden">{`┌───────────────────────┐
-│  ██████╗███████╗      │
-│ ██╔════╝██╔════╝      │
-│ ██║     █████╗        │
-│ ██║     ██╔══╝        │
-│ ╚██████╗██║           │
-│  ╚═════╝╚═╝           │
+│  >> whoami            │
+│  dionismarkov         │
 │                       │
-│  > experiments: 12    │
-│  > status: forging    │
+│  >> org               │
+│  ValtheraLabs         │
+│                       │
+│  > status: building   │
 └───────────────────────┘`}</span>
                 <span className="hidden sm:block">{`┌─────────────────────────────────────┐
 │                                     │
-│  ██████╗ ██████╗ ██████╗ ███████╗   │
-│ ██╔════╝██╔═══██╗██╔══██╗██╔════╝   │
-│ ██║     ██║   ██║██║  ██║█████╗     │
-│ ██║     ██║   ██║██║  ██║██╔══╝     │
-│ ╚██████╗╚██████╔╝██████╔╝███████╗   │
-│  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝   │
-│           Ein                       │
+│  >> whoami                          │
+│  Dionis Markov                      │
+│  >> org                             │
+│  ValtheraLabs                       │
+│  >> stack                           │
+│  AI · Cloud · Web3 · Open Source    │
 │                                     │
-│   > experiments loaded: 12          │
-│   > status: forging                 │
-│   > last spark: today               │
+│   > status: building                │
+│   > projects: 3 public repos        │
+│   > focus: AI-powered platforms     │
 │                                     │
 └─────────────────────────────────────┘`}</span>
               </pre>
@@ -129,14 +126,14 @@ export function HeroSection() {
             <div className="absolute -right-2 sm:-right-6 -top-2 sm:-top-6 rounded-lg border border-primary/40 bg-primary/15 glass px-3 sm:px-4 py-1.5 font-mono text-[11px] sm:text-xs text-primary animate-float">
               <span className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-                v0.1.0
+                active
               </span>
             </div>
             <div
               className="absolute -bottom-3 sm:-bottom-6 -left-2 sm:-left-6 rounded-lg border border-border bg-card glass px-3 sm:px-4 py-1.5 font-mono text-[11px] sm:text-xs text-muted-foreground animate-float"
               style={{ animationDelay: "1s" }}
             >
-              Dec. 2025
+              Jul. 2026
             </div>
 
             <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-primary/5 blur-3xl" />

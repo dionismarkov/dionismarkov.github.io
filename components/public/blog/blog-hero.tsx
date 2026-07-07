@@ -11,8 +11,7 @@ export function BlogHero() {
             <span className="bg-gradient-to-l from-primary/50 to-accent text-transparent bg-clip-text">Insights</span>
           </h1>
           <p className="max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-            Technical deep-dives, experiments, and lessons learned from the digital laboratory. Exploring code, systems,
-            and the craft of building software.
+            Technical deep-dives, experiments, and lessons learned building AI systems, cloud infrastructure, and developer tools at ValtheraLabs.
           </p>
         </div>
       </div>

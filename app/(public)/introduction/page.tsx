@@ -3,118 +3,115 @@ import { Code2, Layers, FileText, Zap, Bot, Globe } from "lucide-react";
 export default function IntroductionPage() {
   return (
     <div>
-      {/* Hero Section */}
       <section className="relative min-h-[60vh] px-4 sm:px-6 pt-28 sm:pt-32 pb-16 sm:pb-20">
         <div className="mx-auto max-w-4xl">
           <div className="space-y-6 sm:space-y-8">
             <div className="space-y-2">
               <p className="font-mono text-xs uppercase tracking-[0.2em] sm:tracking-[0.3em] text-muted-foreground">
-                Welcome to EinCode
+                About Dionis Markov
               </p>
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl text-balance">
-                Where Code Meets{" "}
+                Building at the Intersection of{" "}
                 <span className="bg-gradient-to-l from-primary/50 to-accent text-transparent bg-clip-text">
-                  Creativity
+                  AI, Cloud & Web3
                 </span>
               </h1>
             </div>
 
             <p className="text-base sm:text-lg leading-relaxed text-muted-foreground max-w-3xl">
-              EinCode is a digital workshop and portfolio platform designed for developers who
-              believe in building in public. It&apos;s a space where ideas take shape, experiments
-              unfold, and open-source projects come to life.
+              Founder and lead developer at ValtheraLabs. I build AI-powered platforms, cloud
+              infrastructure, blockchain systems, and open-source developer tools — shipping
+              production software across the full stack.
             </p>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
       <section className="relative px-4 sm:px-6 py-16 sm:py-20">
         <div className="mx-auto max-w-4xl">
           <div className="rounded border border-border/50 bg-card/50 p-6 sm:p-10 backdrop-blur-sm space-y-8">
             <div className="space-y-4">
               <p className="font-mono text-xs uppercase tracking-[0.2em] sm:tracking-[0.3em] text-primary">
-                About the Platform
+                About Me
               </p>
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                A Developer&apos;s Digital Workshop
+                Full-Stack Engineer & Open Source Builder
               </h2>
             </div>
 
             <div className="space-y-6 text-base sm:text-lg leading-relaxed text-muted-foreground">
               <p>
-                EinCode isn&apos;t just another portfolio website—it&apos;s a living, breathing
-                showcase of continuous learning and experimentation. Built by developers, for
-                developers, it represents the philosophy that the best way to learn is to build,
-                share, and iterate.
+                I am a 30-year-old full-stack software engineer based in Croatia. I also go by
+                Trinexxx online. My work spans the entire development stack — from AI inference
+                engines and microservices backends to modern web frontends and blockchain smart
+                contracts.
               </p>
 
               <p>
-                Whether you&apos;re exploring cutting-edge AI integrations, diving into systems
-                programming, or looking for modern web development patterns, EinCode offers a window
-                into real-world projects at various stages of development—from initial experiments
-                to production-ready solutions.
+                As the founder of ValtheraLabs, I lead the development of an ecosystem of
+                AI-powered applications, SaaS platforms, and developer tools. Every project is
+                built in public, with an emphasis on clean architecture, practical engineering,
+                and real-world utility.
               </p>
 
               <p>
-                The platform is fully open-source, encouraging collaboration and knowledge sharing
-                within the developer community. Every project, every lab note, and every line of
-                code is designed to inspire and educate.
+                This portfolio is a living showcase of that work — a window into active projects,
+                technical explorations, and tools I ship. All code is open source and available
+                on GitHub.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Grid */}
       <section className="relative px-4 sm:px-6 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 space-y-4 text-center">
             <p className="font-mono text-xs uppercase tracking-[0.2em] sm:tracking-[0.3em] text-primary">
-              Platform Features
+              What I Do
             </p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Built for Modern Development
+              Full-Stack Engineering
             </h2>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                icon: Code2,
-                title: "Open Source Projects",
+                icon: Bot,
+                title: "AI & Agents",
                 description:
-                  "Every project is available on GitHub for learning and collaboration. Transparent development process from start to finish.",
+                  "LLM inference pipelines, agent orchestration with MCP, embeddings, and RAG systems for production AI applications.",
+              },
+              {
+                icon: Code2,
+                title: "Cloud Infrastructure",
+                description:
+                  "Scalable microservices with FastAPI, Docker Swarm, PostgreSQL, and bare-metal deployment for cost-effective hosting.",
               },
               {
                 icon: Layers,
-                title: "Developer Workbench",
+                title: "Web Development",
                 description:
-                  "A dedicated space for ongoing experiments and prototypes. Watch ideas evolve from concept to implementation.",
-              },
-              {
-                icon: FileText,
-                title: "Lab Notes",
-                description:
-                  "Detailed documentation of learning journeys, technical insights, and development patterns discovered along the way.",
-              },
-              {
-                icon: Zap,
-                title: "Modern Tech Stack",
-                description:
-                  "Built with cutting-edge technologies including Next.js, React, TypeScript, and Tailwind CSS for optimal performance.",
-              },
-              {
-                icon: Bot,
-                title: "AI Integration",
-                description:
-                  "Exploring the intersection of AI and web development with practical implementations and real-world use cases.",
+                  "Modern frontends with Next.js, React, TypeScript, and Tailwind CSS. Performance-optimized, accessible, and responsive.",
               },
               {
                 icon: Globe,
-                title: "Localization",
+                title: "Blockchain & Web3",
                 description:
-                  "Multi-language support with i18n integration, making projects accessible to a global developer community.",
+                  "Solidity smart contracts, upgradeable proxy patterns, and decentralized infrastructure for Web3 platforms.",
+              },
+              {
+                icon: Zap,
+                title: "Developer Tools",
+                description:
+                  "Open-source starters, Docker images, CI/CD templates, and automation tools that accelerate development workflows.",
+              },
+              {
+                icon: FileText,
+                title: "Open Source",
+                description:
+                  "All projects built in public on GitHub. Transparent development, collaborative patterns, and community-driven iteration.",
               },
             ].map((feature, index) => (
               <div

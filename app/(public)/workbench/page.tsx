@@ -5,7 +5,7 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://dionismarkov.github
 
 export const metadata: Metadata = {
   title: "Workbench",
-  description: "Active experiments, prototypes, and work in progress. A peek into the digital workshop where ideas take shape.",
+  description: "Active projects and work in progress at ValtheraLabs — AI engines, cloud APIs, Web3 contracts, and more.",
   keywords: ["experiments", "prototypes", "work in progress", "playground", "dev tools"],
   openGraph: {
     title: "Workbench — Dionis Markov",

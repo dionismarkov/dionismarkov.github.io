@@ -24,22 +24,21 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://dionismarkov.github.io'),
   title: {
-    default: "Dionis Markov — Dionis Markov's Digital Laboratory",
+    default: "Dionis Markov — Full-Stack Engineer & ValtheraLabs Founder",
     template: "%s | Dionis Markov",
   },
   description:
-    "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts by Dionis Markov.",
-  keywords: ["Software Engineering", "Web Development", "Next.js", "React", "TypeScript", "AI", "Machine Learning", "Systems Programming", "Code Experiments"],
+    "Full-stack software engineer building AI-powered tools, cloud infrastructure, and open-source systems at ValtheraLabs.",
+  keywords: ["Software Engineering", "Web Development", "Next.js", "React", "TypeScript", "AI", "Machine Learning", "Systems Programming", "ValtheraLabs", "Blockchain", "Cloud Infrastructure"],
   authors: [{ name: "Dionis Markov", url: "https://github.com/dionismarkov" }],
   creator: "Dionis Markov",
   publisher: "Dionis Markov",
-  generator: "v0.app",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "/",
-    title: "Dionis Markov — Dionis Markov's Digital Laboratory",
-    description: "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts by Dionis Markov.",
+    title: "Dionis Markov — Full-Stack Engineer & ValtheraLabs Founder",
+    description: "Building AI-powered software, cloud infrastructure, and developer tools at ValtheraLabs.",
     siteName: "Dionis Markov",
     images: [
       {
@@ -52,8 +51,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dionis Markov — Dionis Markov's Digital Laboratory",
-    description: "A digital workshop where code meets curiosity. Experiments, prototypes, and open-source artifacts.",
+    title: "Dionis Markov — Full-Stack Engineer & ValtheraLabs Founder",
+    description: "Building AI-powered software, cloud infrastructure, and developer tools at ValtheraLabs.",
     creator: "@dionismarkov",
     images: ["/og-image.png"],
   },
