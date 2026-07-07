@@ -14,7 +14,7 @@
 \`\`\`bash
 # Clone repository
 git clone https://github.com/dionismarkov/dionismarkov.github.io.git
-cd eincode
+cd dionismarkov.github.io
 
 # Install dependencies
 pnpm install
@@ -144,7 +144,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About | Dionis Markov',
-  description: 'About Dionis Markov and this digital laboratory',
+  description: 'About Dionis Markov — full-stack engineer and founder of ValtheraLabs',
 }
 
 export default function AboutPage() {

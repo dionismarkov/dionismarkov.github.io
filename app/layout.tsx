@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Dionis Markov — Dionis Markov's Digital Laboratory",
+        alt: "Dionis Markov — Full-Stack Engineer & ValtheraLabs Founder",
       },
     ],
   },

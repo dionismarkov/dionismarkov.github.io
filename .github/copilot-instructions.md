@@ -1,4 +1,4 @@
-# GitHub Copilot / AI Agent Instructions — EinCode
+# GitHub Copilot / AI Agent Instructions — Dionis Markov Portfolio
 
 Quick orienting notes for AI agents working in this repository.
 

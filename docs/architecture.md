@@ -2,7 +2,7 @@
 
 ## Overview
 
-Dionis Markov is a Next.js 16 + React 19 personal portfolio and digital laboratory built with modern web technologies. It demonstrates Next.js App Router patterns, Tailwind CSS v4 styling, and a component-driven architecture.
+Dionis Markov is a Next.js 16 + React 19 personal portfolio built with modern web technologies. It demonstrates Next.js App Router patterns, Tailwind CSS v4 styling, and a component-driven architecture.
 
 ## Technology Stack
 
@@ -18,7 +18,7 @@ Dionis Markov is a Next.js 16 + React 19 personal portfolio and digital laborato
 ## Project Structure
 
 \`\`\`
-eincode/
+dionismarkov.github.io/
 ├── app/                          # Next.js App Router (server-first)
 │   ├── layout.tsx                # Root layout with fonts, metadata, ThemeProvider
 │   ├── page.tsx                  # Homepage
