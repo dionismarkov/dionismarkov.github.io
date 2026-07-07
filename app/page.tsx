@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
+import { TechStack } from "@/components/tech-stack"
 import { ProjectsGrid } from "@/components/projects-grid"
 import { LabNotes } from "@/components/lab-notes"
 import { Workbench } from "@/components/workbench"
@@ -27,6 +28,7 @@ export default function Home() {
         <div className="relative z-10">
           <Header />
           <HeroSection />
+          <TechStack />
           <ProjectsGrid />
           <LabNotes />
           <Workbench />

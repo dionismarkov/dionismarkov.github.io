@@ -38,7 +38,7 @@ const projects = [
     id: 2,
     title: "AI Engine",
     description:
-      "ValtheraLabs AI engine — backend service for LLM inference, embeddings, and agent orchestration. Built with Python and modern AI frameworks.",
+      "ValtheraLabs AI engine — backend service for LLM inference, embeddings, and agent orchestration. AI engine and automation intelligence for the platform.",
     tags: ["Python", "AI", "LLM", "Embeddings", "Agents"],
     status: "in-progress",
     year: "2026",
@@ -51,7 +51,7 @@ const projects = [
     id: 3,
     title: "Backend API",
     description:
-      "ValtheraLabs core backend API — scalable microservices architecture powering the product ecosystem.",
+      "ValtheraLabs core backend API — scalable microservices architecture powering the product ecosystem. Backend API services and platform logic.",
     tags: ["Python", "FastAPI", "PostgreSQL", "Microservices"],
     status: "in-progress",
     year: "2026",
@@ -64,7 +64,7 @@ const projects = [
     id: 4,
     title: "Web App",
     description:
-      "ValtheraLabs main web application — Next.js frontend for the product platform with modern UI/UX.",
+      "ValtheraLabs main web application — Next.js frontend for the product platform with modern UI/UX. Modern web application frontend.",
     tags: ["TypeScript", "Next.js", "React", "Tailwind"],
     status: "in-progress",
     year: "2026",
@@ -77,7 +77,7 @@ const projects = [
     id: 5,
     title: "Smart Contracts",
     description:
-      "Blockchain smart contracts for ValtheraLabs Web3 infrastructure. Solidity-based contracts for decentralized systems.",
+      "Blockchain smart contracts for ValtheraLabs Web3 infrastructure. Solidity-based contracts for decentralized systems. Blockchain infrastructure and smart contract systems.",
     tags: ["Solidity", "Blockchain", "Web3", "Ethereum"],
     status: "in-progress",
     year: "2026",

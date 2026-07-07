@@ -1,4 +1,4 @@
-import { Code2, Layers, FileText, Zap, Bot, Globe } from "lucide-react";
+import { Code2, Layers, FileText, Zap, Bot, Globe, Braces, Server, Database, Cloud, Cpu, Blocks } from "lucide-react";
 
 export default function IntroductionPage() {
   return (
@@ -127,6 +127,41 @@ export default function IntroductionPage() {
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   {feature.description}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Tech Stack */}
+      <section className="relative px-4 sm:px-6 py-16 sm:py-20 border-t border-border/30">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 space-y-4 text-center">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] sm:tracking-[0.3em] text-primary">Technology</p>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Tech Stack</h2>
+          </div>
+
+          <div className="rounded-xl border border-border/50 bg-card/40 backdrop-blur-sm overflow-hidden">
+            {[
+              { category: "Languages", icon: Braces, items: ["TypeScript", "JavaScript", "Python", "Java", "C++", "Go", "Rust", "PHP"] },
+              { category: "Frontend", icon: Globe, items: ["React", "Next.js", "Vue", "Tailwind CSS", "HTML", "CSS"] },
+              { category: "Backend", icon: Server, items: ["Node.js", "Express", "NestJS", "FastAPI", "REST APIs"] },
+              { category: "Database", icon: Database, items: ["PostgreSQL", "MySQL", "MongoDB", "Firebase", "Supabase"] },
+              { category: "DevOps & Cloud", icon: Cloud, items: ["Docker", "Linux", "Git", "GitHub", "Cloudflare", "Bash"] },
+              { category: "AI & Web3", icon: Cpu, items: ["Ollama", "Qwen Coder", "RAG", "Solidity", "Smart Contracts"] },
+            ].map((group, index) => (
+              <div key={index} className="flex items-start gap-4 p-5 sm:p-6 border-b border-border/30 last:border-b-0 hover:bg-secondary/20 transition-colors">
+                <group.icon className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                <div className="min-w-0 flex-1">
+                  <span className="font-mono text-xs uppercase tracking-wider text-foreground font-semibold block mb-3">{group.category}</span>
+                  <div className="flex flex-wrap gap-2">
+                    {group.items.map((item) => (
+                      <span key={item} className="rounded-md border border-border/60 bg-secondary/50 px-3 py-1.5 font-mono text-xs text-muted-foreground">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
