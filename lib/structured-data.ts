@@ -61,8 +61,8 @@ export function generatePersonStructuredData() {
     image: 'https://dionismarkov.github.io/developer-portrait.png',
     sameAs: [
       'https://github.com/dionismarkov',
-      'https://twitter.com/dionismarkov',
-      'https://linkedin.com/in/dionismarkov',
+      'https://x.com/dionismarkovv?s=11',
+      'https://www.linkedin.com/in/dionis-markov-5a296741b?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
     ],
     jobTitle: 'Founder & Full-Stack Engineer',
     worksFor: {

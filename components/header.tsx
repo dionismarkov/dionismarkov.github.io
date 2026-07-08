@@ -17,8 +17,8 @@ const navItems = [
 
 const socialLinks = [
   { label: "GitHub", href: "https://github.com/dionismarkov", icon: Github },
-  { label: "Twitter", href: "https://twitter.com/dionismarkov", icon: Twitter },
-  { label: "LinkedIn", href: "https://linkedin.com/in/dionismarkov", icon: Linkedin },
+  { label: "Twitter", href: "https://x.com/dionismarkovv?s=11", icon: Twitter },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/dionis-markov-5a296741b?utm_source=share_via&utm_content=profile&utm_medium=member_ios", icon: Linkedin },
 ]
 
 export function Header() {
