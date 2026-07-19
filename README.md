@@ -1,8 +1,8 @@
 # Dionis Markov Portfolio
 
-Personal portfolio site for Dionis Markov, deployed with GitHub Pages at:
+Personal portfolio site for Dionis Markov, deployed with Cloudflare Pages at:
 
-https://dionismarkov.github.io/
+https://dionismarkov.com/
 
 ## Stack
 
@@ -11,13 +11,13 @@ https://dionismarkov.github.io/
 - TypeScript
 - Tailwind CSS
 - Radix UI primitives
-- GitHub Actions
-- GitHub Pages static export
+- GitHub Actions validation
+- Cloudflare Pages static export
 
 ## Development
 
 ```bash
-pnpm install
+pnpm install --frozen-lockfile
 pnpm dev
 ```
 
@@ -25,21 +25,15 @@ pnpm dev
 
 ```bash
 pnpm lint
-pnpm exec tsc --noEmit
+pnpm typecheck
+pnpm test
+pnpm audit --audit-level high
 pnpm build
 ```
 
 ## Deployment
 
-Every push to `main` runs `.github/workflows/deploy-pages.yml`.
-
-The workflow:
-
-- installs dependencies
-- runs lint
-- runs TypeScript checks
-- builds the static site into `out/`
-- deploys to GitHub Pages
+Pull requests run non-destructive validation. Production deployment uses Cloudflare Pages native Git integration. Build command: `pnpm build`; output: `out/`. See `docs/CLOUDFLARE_DEPLOYMENT.md`.
 
 ## Repository
 

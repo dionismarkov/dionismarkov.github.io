@@ -1,4 +1,25 @@
 import { Code2, Layers, FileText, Zap, Bot, Globe, Braces, Server, Database, Cloud, Cpu, Blocks } from "lucide-react";
+import type { Metadata } from "next";
+
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://dionismarkov.com";
+
+export const metadata: Metadata = {
+  title: "Introduction",
+  description: "Professional introduction, experience focus, capabilities, and technology stack for Dionis Markov.",
+  alternates: { canonical: `${baseUrl}/introduction` },
+  openGraph: {
+    title: "Introduction — Dionis Markov",
+    description: "Professional introduction, experience focus, capabilities, and technology stack.",
+    url: `${baseUrl}/introduction`,
+    images: [`${baseUrl}/og-image.png`],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Introduction — Dionis Markov",
+    description: "Professional introduction, experience focus, capabilities, and technology stack.",
+    images: [`${baseUrl}/og-image.png`],
+  },
+};
 
 export default function IntroductionPage() {
   return (

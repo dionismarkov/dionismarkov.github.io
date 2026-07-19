@@ -1,7 +1,7 @@
 import { ProjectsPageContent } from "@/components/public/projects/projects-page-content";
 import type { Metadata } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://dionismarkov.github.io';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://dionismarkov.com';
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${baseUrl}/og-image-projects.png`,
+        url: `${baseUrl}/og-image.png`,
         width: 1200,
         height: 630,
         alt: "Dionis Markov Projects",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Projects — Dionis Markov",
     description: "Explore open source projects, experiments, and tools.",
-    images: [`${baseUrl}/og-image-projects.png`],
+    images: [`${baseUrl}/og-image.png`],
   },
   alternates: {
     canonical: `${baseUrl}/projects`,

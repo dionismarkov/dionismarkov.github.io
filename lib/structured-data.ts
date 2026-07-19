@@ -17,7 +17,7 @@ export function generateBlogPostStructuredData(post: BlogPost, url: string) {
     publisher: {
       '@type': 'Person',
       name: 'Dionis Markov',
-      url: 'https://dionismarkov.github.io',
+      url: 'https://dionismarkov.com',
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -57,8 +57,8 @@ export function generatePersonStructuredData() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Dionis Markov',
-    url: 'https://dionismarkov.github.io',
-    image: 'https://dionismarkov.github.io/developer-portrait.png',
+    url: 'https://dionismarkov.com',
+    image: 'https://dionismarkov.com/developer-portrait.png',
     sameAs: [
       'https://github.com/dionismarkov',
       'https://x.com/dionismarkovv?s=11',

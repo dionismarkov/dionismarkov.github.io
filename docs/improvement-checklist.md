@@ -274,7 +274,7 @@ import { blogPosts } from '@/lib/blog-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = blogPosts.map((post) => ({
-    url: `https://dionismarkov.github.io/blog/${post.slug}`,
+    url: `https://dionismarkov.com/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
@@ -282,13 +282,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: 'https://dionismarkov.github.io',
+      url: 'https://dionismarkov.com',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: 'https://dionismarkov.github.io/blog',
+      url: 'https://dionismarkov.com/blog',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
@@ -551,14 +551,14 @@ export async function GET() {
 <rss version="2.0">
   <channel>
     <title>Dionis Markov Blog</title>
-    <link>https://dionismarkov.github.io/blog</link>
+    <link>https://dionismarkov.com/blog</link>
     <description>Code, experiments, and digital artifacts</description>
     ${blogPosts
       .map(
         (post) => `
     <item>
       <title>${post.title}</title>
-      <link>https://dionismarkov.github.io/blog/${post.slug}</link>
+      <link>https://dionismarkov.com/blog/${post.slug}</link>
       <description>${post.excerpt}</description>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
     </item>`

@@ -2,66 +2,44 @@
 
 import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
-import { Github, ExternalLink, Clock, GitBranch, Activity } from "lucide-react"
+import { Github, ExternalLink, Activity } from "lucide-react"
 
 const wipItems = [
   {
     id: 1,
     name: "ai-engine",
     description: "LLM inference, embeddings, and agent orchestration service for ValtheraLabs platform",
-    progress: 65,
-    lastUpdated: "Jul 2026",
     url: "https://github.com/ValtheraLabs/ai-engine",
-    branch: "main",
-    commits: 24,
+    status: "In development",
   },
   {
     id: 2,
     name: "backend-api",
     description: "Scalable microservices API for ValtheraLabs product ecosystem",
-    progress: 55,
-    lastUpdated: "Jul 2026",
     url: "https://github.com/ValtheraLabs/backend-api",
-    branch: "main",
-    commits: 31,
+    status: "In development",
   },
   {
     id: 3,
     name: "web-app",
     description: "ValtheraLabs main web application platform",
-    progress: 45,
-    lastUpdated: "Jul 2026",
     url: "https://github.com/ValtheraLabs/web-app",
-    branch: "develop",
-    commits: 18,
+    status: "In development",
   },
   {
     id: 4,
     name: "smart-contracts",
     description: "Blockchain smart contracts for Web3 infrastructure",
-    progress: 30,
-    lastUpdated: "Jul 2026",
     url: "https://github.com/ValtheraLabs/smart-contracts",
-    branch: "main",
-    commits: 12,
+    status: "In development",
   },
   {
     id: 5,
-    name: "valtheralabs-site",
-    description: "Official ValtheraLabs website — Next.js 15, Tailwind, Framer Motion",
-    progress: 95,
-    lastUpdated: "Jul 2026",
-    url: "https://github.com/ValtheraLabs/valtheralabs-site",
-    branch: "main",
-    commits: 47,
+    name: "ValtheraSwap",
+    description: "ValtheraLabs decentralized exchange product interface",
+    url: "https://github.com/ValtheraLabs",
+    status: "Active product",
   },
-]
-
-const recentActivity = [
-  { type: "commit", project: "ai-engine", message: "Add LLM inference pipeline with MCP tools", time: "2 hours ago" },
-  { type: "commit", project: "backend-api", message: "Implement user authentication middleware", time: "5 hours ago" },
-  { type: "branch", project: "web-app", message: "Created develop branch for staging", time: "1 day ago" },
-  { type: "commit", project: "valtheralabs-site", message: "Update product page with metrics", time: "2 days ago" },
 ]
 
 export function WorkbenchPageContent() {
@@ -142,42 +120,10 @@ export function WorkbenchPageContent() {
                       <p className="pl-6 text-xs text-muted-foreground line-clamp-2 sm:line-clamp-1">
                         {item.description}
                       </p>
-                      <div className="pl-6 flex items-center gap-4 text-xs text-muted-foreground">
-                        <span className="flex items-center gap-1">
-                          <GitBranch className="h-3 w-3" />
-                          {item.branch}
-                        </span>
-                        <span>{item.commits} commits</span>
-                      </div>
+                      <p className="pl-6 font-mono text-xs text-muted-foreground">Status: {item.status}</p>
                     </div>
 
-                    <div className="flex items-center justify-between gap-6 pl-6 sm:pl-0 sm:justify-end">
-                      <div className="flex items-center gap-3 flex-1 sm:flex-none">
-                        <div className="h-2 w-full sm:w-28 overflow-hidden rounded-full bg-secondary/80 relative">
-                          <div
-                            className={cn(
-                              "h-full rounded-full transition-all duration-700 ease-out",
-                              item.progress >= 80
-                                ? "bg-primary"
-                                : item.progress >= 50
-                                  ? "bg-yellow-500"
-                                  : "bg-orange-500",
-                            )}
-                            style={{ width: `${item.progress}%` }}
-                          />
-                          <div className="absolute inset-0 animate-shimmer opacity-30" />
-                        </div>
-                        <span
-                          className={cn(
-                            "font-mono text-xs w-10 shrink-0 transition-colors",
-                            item.progress >= 80 ? "text-primary" : "text-muted-foreground",
-                          )}
-                        >
-                          {item.progress}%
-                        </span>
-                      </div>
-                      <span className="font-mono text-xs text-muted-foreground shrink-0">{item.lastUpdated}</span>
-                    </div>
+                    <span className="pl-6 sm:pl-0 font-mono text-xs text-primary shrink-0">View source</span>
                   </a>
                 ))}
               </div>
@@ -205,18 +151,16 @@ export function WorkbenchPageContent() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-3 rounded-lg bg-secondary/30">
                   <p className="text-2xl font-bold text-foreground">{wipItems.length}</p>
-                  <p className="font-mono text-xs text-muted-foreground">Active</p>
+                  <p className="font-mono text-xs text-muted-foreground">Listed</p>
                 </div>
                 <div className="text-center p-3 rounded-lg bg-secondary/30">
-                  <p className="text-2xl font-bold text-primary">
-                    {Math.round(wipItems.reduce((a, b) => a + b.progress, 0) / wipItems.length)}%
-                  </p>
-                  <p className="font-mono text-xs text-muted-foreground">Avg Progress</p>
+                  <p className="text-sm font-bold text-primary">No live</p>
+                  <p className="font-mono text-xs text-muted-foreground">Telemetry</p>
                 </div>
               </div>
             </div>
 
-            {/* Recent Activity */}
+            {/* Repository status */}
             <div
               className={cn(
                 "rounded-xl border border-border bg-card/40 glass p-5 opacity-0",
@@ -225,27 +169,11 @@ export function WorkbenchPageContent() {
             >
               <h3 className="font-mono text-xs uppercase tracking-wider text-primary mb-4 flex items-center gap-2">
                 <Activity className="h-3.5 w-3.5" />
-                Recent Activity
+                Repository Status
               </h3>
-              <div className="space-y-3">
-                {recentActivity.map((activity, index) => (
-                  <div key={index} className="flex items-start gap-3 text-xs">
-                    <span
-                      className={cn(
-                        "shrink-0 w-1.5 h-1.5 rounded-full mt-1.5",
-                        activity.type === "commit" ? "bg-primary" : "bg-yellow-500",
-                      )}
-                    />
-                    <div className="min-w-0 flex-1">
-                      <p className="text-foreground truncate">{activity.message}</p>
-                      <p className="text-muted-foreground flex items-center gap-1">
-                        <Clock className="h-3 w-3" />
-                        {activity.time}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <p className="text-xs leading-relaxed text-muted-foreground">
+                This page does not report live commit counts or completion percentages. Follow each source link for current repository activity.
+              </p>
             </div>
           </div>
         </div>

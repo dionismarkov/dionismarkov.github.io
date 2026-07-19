@@ -57,8 +57,7 @@ export function HeroSection() {
 
             <p className="max-w-lg text-base sm:text-lg leading-relaxed text-muted-foreground animate-fade-in-up stagger-2">
               Full-stack software engineer focused on AI, cloud infrastructure, and developer tooling. Currently
-              building at <a href="https://github.com/ValtheraLabs" target="_blank" rel="noopener noreferrer" className="text-foreground font-medium underline-animate hover:text-primary transition-colors">ValtheraLabs</a> — an ecosystem of AI-powered
-              applications, SaaS platforms, and open-source projects.
+              building at <a href="https://valtheralabs.io" target="_blank" rel="noopener noreferrer" className="text-foreground font-medium underline-animate hover:text-primary transition-colors">ValtheraLabs</a>, including the <a href="https://valtheraswap.io" target="_blank" rel="noopener noreferrer" className="text-foreground font-medium underline-animate hover:text-primary transition-colors">ValtheraSwap</a> product.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up stagger-3">
