@@ -3,7 +3,7 @@ import { BlogList } from "@/components/public/blog/blog-list";
 import { BlogSidebar } from "@/components/public/blog/blog-sidebar";
 import type { Metadata } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://dionismarkov.github.io';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://dionismarkov.com';
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${baseUrl}/og-image-blog.png`,
+        url: `${baseUrl}/og-image.png`,
         width: 1200,
         height: 630,
         alt: "Dionis Markov Blog",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Blog — Dionis Markov",
     description: "Technical articles on engineering, AI, cloud infrastructure, and open-source development.",
-    images: [`${baseUrl}/og-image-blog.png`],
+    images: [`${baseUrl}/og-image.png`],
   },
   alternates: {
     canonical: `${baseUrl}/blog`,

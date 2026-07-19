@@ -1,7 +1,7 @@
 import { WorkbenchPageContent } from "@/components/public/workbench/workbench-page-content";
 import type { Metadata } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://dionismarkov.github.io';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://dionismarkov.com';
 
 export const metadata: Metadata = {
   title: "Workbench",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${baseUrl}/og-image-workbench.png`,
+        url: `${baseUrl}/og-image.png`,
         width: 1200,
         height: 630,
         alt: "Dionis Markov Workbench",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Workbench — Dionis Markov",
     description: "Active experiments, prototypes, and work in progress.",
-    images: [`${baseUrl}/og-image-workbench.png`],
+    images: [`${baseUrl}/og-image.png`],
   },
   alternates: {
     canonical: `${baseUrl}/workbench`,

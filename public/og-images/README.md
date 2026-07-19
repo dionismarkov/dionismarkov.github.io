@@ -6,9 +6,7 @@ This directory should contain Open Graph images for social media sharing.
 
 ### Static Pages (1200x630px)
 - `og-image.png` - Homepage
-- `og-image-blog.png` - Blog list page
-- `og-image-projects.png` - Projects page
-- `og-image-workbench.png` - Workbench page
+- `og-image.png` - Current shared visual; page titles and descriptions remain unique. Replace with page-specific images only after reviewed assets exist.
 
 ### Dynamic Blog Posts (1200x630px)
 Each blog post should have an OG image named after its slug:

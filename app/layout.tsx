@@ -22,7 +22,8 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://dionismarkov.github.io'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://dionismarkov.com'),
+  alternates: { canonical: '/' },
   title: {
     default: "Dionis Markov — Full-Stack Engineer & ValtheraLabs Founder",
     template: "%s | Dionis Markov",
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dionis Markov — Full-Stack Engineer & ValtheraLabs Founder",
     description: "Building AI-powered software, cloud infrastructure, and developer tools at ValtheraLabs.",
-    creator: "@dionismarkov",
+    creator: "@dionismarkovv",
     images: ["/og-image.png"],
   },
   robots: {
