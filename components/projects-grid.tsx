@@ -1,8 +1,8 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState } from "react"
 import { cn } from "@/lib/utils"
-import { Github, Star, GitFork, ExternalLink, Sparkles } from "lucide-react"
+import { Github, ExternalLink, Sparkles } from "lucide-react"
 
 const projects = [
   {
@@ -115,7 +115,10 @@ export function ProjectsGrid() {
         <div className="mb-10 sm:mb-14 flex flex-col gap-6 sm:gap-8 sm:flex-row sm:items-end sm:justify-between">
           <div className="space-y-3 animate-fade-in-up">
             <p className="font-mono text-xs uppercase tracking-[0.25em] sm:tracking-[0.35em] text-primary">Artifacts</p>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">Open Source Projects</h2>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">Selected Work</h2>
+            <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+              Products and systems I lead, build, or contribute to across the Valthera ecosystem and independent work.
+            </p>
           </div>
 
           <div className="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:overflow-visible sm:flex-wrap scrollbar-hide animate-fade-in-up stagger-2">
@@ -202,17 +205,6 @@ export function ProjectsGrid() {
               >
                 {project.description}
               </p>
-
-              <div className="mb-5 flex items-center gap-5 font-mono text-xs text-muted-foreground">
-                <span className="flex items-center gap-1.5 transition-colors group-hover:text-yellow-500">
-                  <Star className="h-3.5 w-3.5" />
-                  {project.stars}
-                </span>
-                <span className="flex items-center gap-1.5 transition-colors group-hover:text-foreground">
-                  <GitFork className="h-3.5 w-3.5" />
-                  {project.forks}
-                </span>
-              </div>
 
               <div className="mb-5 flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
