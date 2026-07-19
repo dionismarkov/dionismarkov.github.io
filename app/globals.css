@@ -506,3 +506,22 @@
   background: oklch(from var(--primary) l c h / 0.3);
   color: var(--foreground);
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hover-lift:hover {
+    transform: none;
+  }
+}

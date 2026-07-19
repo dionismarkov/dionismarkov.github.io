@@ -99,6 +99,13 @@ export function Footer() {
             © {new Date().getFullYear()} Dionis Markov — All experiments reserved
           </p>
         </div>
+        <p className="mt-8 text-center font-mono text-xs leading-relaxed text-muted-foreground">
+          Dionis Markov is the founder of{" "}
+          <a className="text-foreground transition-colors hover:text-primary" href="https://valtheralabs.io">ValtheraLabs</a>
+          {" "}and leads{" "}
+          <a className="text-foreground transition-colors hover:text-primary" href="https://valtheraswap.io">ValtheraSwap</a>
+          {" "}as an ecosystem product.
+        </p>
       </div>
     </footer>
   )

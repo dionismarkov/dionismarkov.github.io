@@ -1,39 +1,6 @@
-"use client"
-
 import Link from "next/link"
-import { useEffect, useState } from "react"
-
-const roles = ["building AI systems", "engineering cloud infra", "crafting developer tools", "architecting Web3", "shipping open source"]
 
 export function HeroSection() {
-  const [currentRole, setCurrentRole] = useState(0)
-  const [displayText, setDisplayText] = useState("")
-  const [isDeleting, setIsDeleting] = useState(false)
-
-  useEffect(() => {
-    const targetText = roles[currentRole]
-    const timeout = setTimeout(
-      () => {
-        if (!isDeleting) {
-          if (displayText.length < targetText.length) {
-            setDisplayText(targetText.slice(0, displayText.length + 1))
-          } else {
-            setTimeout(() => setIsDeleting(true), 2000)
-          }
-        } else {
-          if (displayText.length > 0) {
-            setDisplayText(displayText.slice(0, -1))
-          } else {
-            setIsDeleting(false)
-            setCurrentRole((prev) => (prev + 1) % roles.length)
-          }
-        }
-      },
-      isDeleting ? 50 : 100,
-    )
-    return () => clearTimeout(timeout)
-  }, [displayText, isDeleting, currentRole])
-
   return (
     <section className="relative px-4 sm:px-6 pt-28 sm:pt-36 pb-16 sm:pb-24">
       <div className="mx-auto max-w-7xl">
@@ -45,12 +12,9 @@ export function HeroSection() {
                 Dionis Markov — Founder @ ValtheraLabs <span className="text-muted-foreground">/ aka Trinexxx</span>
               </p>
               <h1 className="text-4xl font-bold tracking-tight sm:text-4xl lg:text-5xl xl:text-6xl text-balance">
-                Full-stack engineer
-                <br />
-                <span
-                  className="bg-gradient-to-l from-primary/50 to-accent text-transparent bg-clip-text typing-cursor"
-                >
-                  {displayText}
+                I build dependable digital products
+                <span className="block bg-gradient-to-l from-primary/50 to-accent text-transparent bg-clip-text">
+                  across AI, cloud, and Web3.
                 </span>
               </h1>
             </div>
@@ -115,8 +79,8 @@ export function HeroSection() {
 │  AI · Cloud · Web3 · Open Source    │
 │                                     │
 │   > status: building                │
-│   > projects: 3 public repos        │
-│   > focus: AI-powered platforms     │
+│   > focus: product engineering      │
+│   > domains: AI · cloud · Web3      │
 │                                     │
 └─────────────────────────────────────┘`}</span>
               </pre>
@@ -132,7 +96,7 @@ export function HeroSection() {
               className="absolute -bottom-3 sm:-bottom-6 -left-2 sm:-left-6 rounded-lg border border-border bg-card glass px-3 sm:px-4 py-1.5 font-mono text-[11px] sm:text-xs text-muted-foreground animate-float"
               style={{ animationDelay: "1s" }}
             >
-              Jul. 2026
+              building with intent
             </div>
 
             <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-primary/5 blur-3xl" />
